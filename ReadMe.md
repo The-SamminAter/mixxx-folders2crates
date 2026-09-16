@@ -48,9 +48,11 @@ It's written in Go and takes about 1 second to update all 46 crates and 832 trac
 
 This tool is tested and used by me on Linux (x86 and ARM), but you may also be able to get it working on Windows or MacOS. I included the default Mixxx DB file paths for Linux, Windows and MacOS, so if you can get it to compile it on your machine, this tool should theoretically work. Please let me know if it actually does :)
 
+If you want to add a library organized by artist, flat mode will prove useful. While changing the functionality slightly, it enables you to just create a single crate for the library/directory you feed into mixxx.
+
 ## Usage
 
-With the latest version of Go (1.17 or higher) installed, run this command to build and install `mixxx-folders2crates`:
+With any old version of Go (1.17 or higher) installed, run this command to build and install `mixxx-folders2crates`:
 
 ```sh
 go install github.com/bvobart/mixxx-folders2crates@latest
@@ -58,7 +60,7 @@ go install github.com/bvobart/mixxx-folders2crates@latest
 
 Then run it with:
 ```sh
-mixxx-folders2crates FOLDER
+mixxx-folders2crates FOLDER <arguments>
 ```
 
 replacing `FOLDER` with the location of your music library.
