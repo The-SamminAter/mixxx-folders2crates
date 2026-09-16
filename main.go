@@ -63,7 +63,7 @@ func main() {
 	if err != nil {
 		red.Println("Error opening Mixxx's DB:")
 		red.Println("  ", yellow.Sprint(err.Error()))
-		os.Exit(2)
+		os.Exit(1)
 	}
 
 	// temporary: print all crates
@@ -143,7 +143,7 @@ func main() {
 		red.Println("  ", yellow.Sprint(err.Error()))
 		fmt.Println()
 		faint.Println("took:", time.Since(startTime))
-		os.Exit(7)
+		os.Exit(1)
 	}
 
 	green.Println("Done!")

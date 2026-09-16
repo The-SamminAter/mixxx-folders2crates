@@ -61,7 +61,7 @@ func FindCrateFolders(libfolder string, ignore *ignore.GitIgnore, flat bool, cra
 			return nil
 		}
 
-		name := NameCrate(relpath) //This just serves to make ONE crate, by overriding the local name... but it doesn't work
+		name := NameCrate(relpath)
 		if flat {
 			if crateName != "" {
 				name = NameCrate(crateName)
